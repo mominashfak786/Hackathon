@@ -26,21 +26,22 @@ const App = () => {
       const userData = await userResponse.json();
       const user = userData.results[0];
       const { name, picture } = user;
-  
+
       newChallenge.userName = `${name.first} ${name.last}`;
       newChallenge.userPhoto = picture.large;
       newChallenge.createdAt = new Date().toLocaleString();
       newChallenge.id = Math.floor(Math.random() * 1000) + 1;
-  
+
       // Retain the previous challenges' counts
-      const updatedChallenges = challenges.map(challenge => ({ ...challenge }));
-  
+      const updatedChallenges = challenges.map((challenge) => ({
+        ...challenge,
+      }));
+
       setChallenges([...updatedChallenges, newChallenge]);
     } catch (error) {
       console.error("Error adding challenge:", error);
     }
   };
-  
 
   const handleUpvote = (id) => {
     const updatedChallenges = challenges.map((challenge) =>
@@ -61,9 +62,24 @@ const App = () => {
     setChallenges(updatedChallenges);
     localStorage.setItem("challenges", JSON.stringify(updatedChallenges));
   };
-  const handleSortByVotes = () => {
+
+  // const handleSortByVotes = () => {
+  //   const sortedChallenges = [...challenges].sort(
+  //     (a, b) => b.likeCount - a.likeCount
+  //   );
+  //   setChallenges(sortedChallenges);
+  // };
+  const handleSortByLikes = () => {
     const sortedChallenges = [...challenges].sort(
       (a, b) => b.likeCount - a.likeCount
+    );
+    setChallenges(sortedChallenges);
+  };
+
+  // Function to sort challenges by dislike count
+  const handleSortByDislikes = () => {
+    const sortedChallenges = [...challenges].sort(
+      (a, b) => b.dislikeCount - a.dislikeCount
     );
     setChallenges(sortedChallenges);
   };
@@ -95,9 +111,10 @@ const App = () => {
             element={
               <ChallengeList
                 challenges={challenges}
-                handleUpvote={handleUpvote} // Ensure this prop is correctly named
+                handleUpvote={handleUpvote}
                 handleDislike={handleDislike}
-                handleSortByVotes={handleSortByVotes}
+                handleSortByLikes={handleSortByLikes}
+                handleSortByDislikes={handleSortByDislikes}
                 handleSortByDate={handleSortByDate}
               />
             }

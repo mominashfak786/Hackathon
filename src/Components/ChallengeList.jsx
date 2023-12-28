@@ -6,14 +6,22 @@ const ChallengeList = ({
   challenges,
   handleUpvote,
   handleDislike,
-  handleSortByVotes,
+  handleSortByLikes,
+  handleSortByDislikes,
   handleSortByDate,
 }) => {
   return (
     <>
-      <Navbar />
+      <Navbar
+        handleSortByLikes={handleSortByLikes}
+        handleSortByDislikes={handleSortByDislikes}
+        handleSortByDate={handleSortByDate}
+      />
       <div style={{ height: "100vh", width: "100%", backgroundColor: "red" }}>
-        <div className="row row-cols-md-3 g-6" style={{ backgroundColor: "red" }}>
+        <div
+          className="row row-cols-md-3 g-6"
+          style={{ backgroundColor: "red" }}
+        >
           {challenges.map((challenge) => (
             <div key={challenge.id} className="col">
               <div className="card shadow p-2 m-4">
@@ -21,7 +29,9 @@ const ChallengeList = ({
                   <h5 className="card-title">{challenge.title}</h5>
                   <p className="card-text">{challenge.description}</p>
                   <p className="card-text">
-                    <small className="text-muted">{challenge.tags.join(", ")}</small>
+                    <small className="text-muted">
+                      {challenge.tags.join(", ")}
+                    </small>
                   </p>
                   <div className="d-flex justify-content-between align-items-center mt-3">
                     <div className="user-info d-flex align-items-center">

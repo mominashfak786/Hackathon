@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ChallengeForm = ({ addChallenge }) => {
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
-  const [tags, setTags] = useState('');
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  const [tags, setTags] = useState("");
 
   const handleTagChange = (e) => {
     setTags(e.target.value);
@@ -14,24 +14,29 @@ const ChallengeForm = ({ addChallenge }) => {
     const newChallenge = {
       title,
       description,
-      tags: tags.split(','),
+      tags: tags.split(","),
       createdAt: new Date().toLocaleString(),
       likeCount: 0,
       dislikeCount: 0,
-      userName: 'RandomUser',
-      userPhoto: 'random_photo_url',
+      userName: "RandomUser",
+      userPhoto: "random_photo_url",
       id: Math.floor(Math.random() * 1000) + 1,
     };
     addChallenge(newChallenge);
-    setTitle('');
-    setDescription('');
-    setTags('');
+    setTitle("");
+    setDescription("");
+    setTags("");
   };
+  function handlealert() {
+    alert("The Data has been added");
+  }
 
   return (
-    <div className="container mt-5">
-      <div className="row">
-  
+    <div className="containers">
+      <div
+        className=" row  justify-content-center align-items-center "
+        style={{ background: "green", height: "100vh" }}
+      >
         <div className="col-md-8">
           <div className="card">
             <div className="card-body">
@@ -65,10 +70,15 @@ const ChallengeForm = ({ addChallenge }) => {
                     <option value="Features">Features</option>
                     <option value="Tech">Tech</option>
                     <option value="Design">Design</option>
-                    {/* Add more options as needed */}
+                    <option value="Design">Artificial Intelligence</option>
+                    <option value="Design">Machine Learning</option>
                   </select>
                 </div>
-                <button type="submit" className="btn btn-primary">
+                <button
+                  onChange={handlealert}
+                  type="submit"
+                  className="btn btn-primary"
+                >
                   Add Challenge
                 </button>
               </form>
