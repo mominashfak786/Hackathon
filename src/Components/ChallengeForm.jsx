@@ -83,7 +83,7 @@ const ChallengeForm = ({ addChallenge }) => {
             <div className="d-flex align-items-center">
               <div className="dropdown">
                 <Link
-                  to="/ChallengeList"
+                  to="/HomePage"
                   className="btn btn-info btn-lg ml-3"
                   style={{
                     border: "1px solid white",

@@ -53,7 +53,7 @@ const Login = ({ handleLogin }) => {
             </div>
             <div className="d-grid">
               <Link
-                to="/ChallengeList"
+                to="/HomePage"
                 type="submit"
                 className="btn btn-primary"
               >

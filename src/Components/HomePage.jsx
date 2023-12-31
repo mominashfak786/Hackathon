@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Upvote from "./Upvote";
 
-const ChallengeList = ({
+const HomePage = ({
   challenges,
   handleUpvote,
   handleDislike,
@@ -85,4 +85,4 @@ const ChallengeList = ({
   );
 };
 
-export default ChallengeList;
+export default HomePage;

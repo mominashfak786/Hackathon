@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Components/Login";
 import ChallengeForm from "./Components/ChallengeForm";
-import ChallengeList from "./Components/ChallengeList";
+import HomePage from "./Components/HomePage";
 import "./App.css";
 import useChallengeFunctions from "./Functions/useChallengeFunctions";
 
@@ -29,9 +29,9 @@ const App = () => {
             }
           />
           <Route
-            path="/ChallengeList"
+            path="/HomePage"
             element={
-              <ChallengeList
+              <HomePage
                 challenges={challenges}
                 handleUpvote={handleUpvote}
                 handleDislike={handleDislike}
