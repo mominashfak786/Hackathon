@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBahai } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = ({
   handleSortByLikes,
@@ -22,12 +24,14 @@ const Navbar = ({
   return (
     <div>
       <nav
-        className="navbar navbar-expand-lg bg-primary p-3"
+        className="navbar navbar-expand-lg  bg-dark p-2   border border-black  border-opacity-75 "
         data-bs-theme="dark"
       >
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
-            Navbar
+          <Link className="navbar-brand fs-2 " to="/">
+            <FontAwesomeIcon icon={faBahai} />
+            CodeCrunch
+            <FontAwesomeIcon icon={faBahai} />
           </Link>
           <button
             className="navbar-toggler"
@@ -40,13 +44,7 @@ const Navbar = ({
             className={`collapse navbar-collapse ${showDropdown ? "show" : ""}`}
             id="navbarColor02"
           >
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
-                  Home
-                </Link>
-              </li>
-            </ul>
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
             <div className="d-flex  align-items-center ">
               <div className="dropdown ">
                 <button

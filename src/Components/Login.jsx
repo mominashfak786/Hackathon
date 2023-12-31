@@ -10,7 +10,6 @@ const Login = ({ handleLogin }) => {
     if (employeeId.trim() !== "") {
       handleLogin(employeeId);
     } else {
-      // Handle validation or empty fields
       alert("Please enter Employee ID");
     }
   };
@@ -33,15 +32,15 @@ const Login = ({ handleLogin }) => {
         }}
       >
         <div
-          className="card p-4"
+          className="card p-4 rounded-3"
           style={{
             backgroundColor: "orange",
             border: "2px solid black",
             width: "300px",
-            height: "200px",
+            height: "220px",
           }}
         >
-          <h2 className="text-center mb-4">Login</h2>
+          <h2 className="text-center mb-4 fs-1">Login</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <input
@@ -53,7 +52,11 @@ const Login = ({ handleLogin }) => {
               />
             </div>
             <div className="d-grid">
-              <Link to="/ChallengeList" type="submit" className="btn btn-primary">
+              <Link
+                to="/ChallengeList"
+                type="submit"
+                className="btn btn-primary"
+              >
                 Login
               </Link>
             </div>

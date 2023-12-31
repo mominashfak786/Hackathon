@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# 📦 Hackathon Ideas
+Hackathon Ideas is a digital product where employees of an organization can login & create challenges for hackathons.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Product Requirements
 
-## Available Scripts
+* Build a web application which lets employees of an organisation to add/manage challenges for internal hackathons which they organise every month.
+* Allow users to add a new challenges/ideas.
+* A challenge will have a title, description and tags
+* Users can upvote / downvote a challenge
+* Show the list of all challenges on home page
+* Allow users to sort challenges with votes count, creation date
+ 
 
-In the project directory, you can run:
 
-### `npm start`
+Hi 👋, I'm Rohith Kumar, a passionate JavaScript fullstack developer.
+* 9.8 Years of Product Experience in CyberSecurity, Telecom Domain and OTT Platform
+* I am a Product Developer with a designer's eye for aesthetics and a security mindset.
+* Experienced in the design, development, and deployment of end-to-end projects based on new concepts for Enterprise SaaS applications using the JavaScript environment.
+* Expertise in the development of production-ready products using a
+Clean Architecture for faster and easier code maintenance, as well as the Data Scraping expert.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🔗 Links
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://2rohith2.ml/hackathon-ideas/)
 
-### `npm test`
+## Tech stack used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 🔦 Coding Methodology
+* Clean Architecture
 
-### `npm run build`
+#### 🖥️ Dashboard
+* HTML
+* Css
+* JavaScript
+* ReactJs
+* [Bootstrap](https://getbootstrap.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Run Locally
+Clone the project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Go to the project directory
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  cd myapp
+```
 
-### `npm run eject`
+Install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+  npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start the server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+  npm run start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Link to access - please run only on the port 3000
+```bash
+  http://localhost:3000
+```
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ✏️ Feedback
+If you have any feedback, please reach out to me at ashfakmomin2001@gmail.com
